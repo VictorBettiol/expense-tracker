@@ -9,8 +9,8 @@
       {{ transaction.text
       }}<span>{{
         transaction.amount < 0
-          ? `-€${Math.abs(transaction.amount)}`
-          : `€${transaction.amount}`
+          ? `-€${Math.abs(transaction.amount).toFixed(2)}`
+          : `€${transaction.amount.toFixed(2)}`
       }}</span
       ><button @click="deleteTransaction(transaction.id)" class="delete-btn">
         x
