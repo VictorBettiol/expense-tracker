@@ -8,7 +8,8 @@
     <div class="form-control">
       <label for="amount"
         >Amount <br />
-        (negative - expense, positive - income)</label
+        number for income, minus number for expense <br />
+        <small>e.g. -7, 10, 50, -3.50...</small></label
       >
       <input
         type="text"
